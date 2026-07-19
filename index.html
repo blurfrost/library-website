@@ -8,8 +8,35 @@
     <script src="javascript.js" defer></script>
 </head>
 <body>
-    <div>
-        <p>Goofy Goober</p>
+    <div class="title">
+        <img src="book-svgrepo-com.svg">
+        <h1>My Library</h1>
     </div>
+    <h2>Add a new book below!</h2>
+    <form>
+        <div class="form-row">
+            <div class="form-question">
+                <label for="title">Title of Book</label>
+                <input type="text" id="title" required>
+            </div>
+            <div class="form-question">
+                <label for="author">Author</label>
+                <input type="text" id="author" required>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-question">
+                <label for="pages">Number of Pages</label>
+                <input type="text" id="pages" required>
+            </div>
+            <div class="form-question">
+                <label for="read-status">Read?</label>
+                <input type="text" id="read-status" required>
+            </div>
+        </div>
+    </form>
+    <button id="submit-button" type="submit">Add Book</button>
+
+
 </body>
 </html>
